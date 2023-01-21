@@ -254,19 +254,76 @@ transition: all 0.5s ease;
 /*predposltdnya*/
 
 .single {
-	display: flex;
-	flex-direction: row;
-	gap: 2rem;
-	margin-left: 4.5rem;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+gap: 2rem;
+margin-bottom: 4rem;
 	
 
 }
 .singleleft {
-	width: 524px;
+position: relative;
+width: 524px;
 height: 398px;
-
 }
-.singleright{
 
+.singleleft h1{
+font-weight: 600;
+font-size: 45px;
+line-height: 68px;
+color: #021206;
+}
+
+.singleleft p{
+font-weight: 500;
+font-size: 18px;
+line-height: 160%;
+color: #021206;
+opacity: 0.7;
+margin-top: 2rem;
+margin-bottom: 2rem;
+}
+
+.singleleft li{
+font-weight: 400;
+font-size: 18px;
+line-height: 160%;
+color: #021206;
+opacity: 0.7;
+}
+
+/*karta*/
+.singleright{
+	position: relative;
+	margin-bottom: 2rem;	
+}
+
+.im_ellipse{
+	position: absolute;
+	top: -60px;
+	left: -60px;
+	z-index: 0;
+	opacity: 0.8;
 	
 }
+
+.im_light{
+	z-index: 1;
+}
+
+.im_ochko{
+	position: absolute;
+	top: 90px;
+	left: 180px;
+
+}
+
+.im_group{
+	position: absolute;
+	top: 170px;
+	left: -110px;
+
+}
+
