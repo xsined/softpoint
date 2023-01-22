@@ -105,10 +105,26 @@ filter: drop-shadow(-5px 5px 45px rgba(2, 18, 6, 0.15));
 	filter: drop-shadow(-5px 5px 45px rgba(2, 18, 6, 1));
 }
 
-.gadgetim img{
+.gadgetim{
+	position: relative;
 	width: 746.63px;
 	height: 440.87px;
+	top: -95px;
+	left: -75px;
+	z-index: 1;
+
 }
+
+.smart{
+	position: absolute;
+	height: 290px;
+	width: 142px;
+	top: 257px;
+	left: 79px;
+}
+
+
+
 
 
 /*rectangle*/ /*она же залупа с картинками*/
@@ -133,6 +149,12 @@ z-index: 1;
 	 
 	z-index: 2;
 
+}
+
+.rectangleimg:hover{
+	cursor: pointer;
+	transition: all 0.5s ease;
+	transform: scale(1.1);
 }
 
 
@@ -336,10 +358,26 @@ opacity: 0.7;
 	opacity: 0.8;
 
 }
+.im_ellipse:hover{
+	cursor: pointer;
+	transition: all 0.5s ease;
+	transform: scale(1.1);
+}
+
 
 .im_light{
 	position: relative;
 	z-index: 1;
+}
+.im_light:hover{
+	cursor: pointer;
+	transition: all 0.5s ease;
+	transform: scale(1.1);
+}
+.im_group:hover{
+	cursor: pointer;
+	transition: all 0.5s ease;
+	transform: scale(1.1);
 }
 
 .im_ochko{
@@ -347,15 +385,21 @@ opacity: 0.7;
 	top: 90px;
 	left: 180px;
 	z-index: 2;
-	
-
 }
+
+.im_ochko:hover{
+	cursor: pointer;
+	transition: all 0.5s ease;
+	transform: scale(1.1);
+}
+
 
 .im_group{
 	position: absolute;
 	top: 170px;
 	left: -110px;
 	z-index: 2;
+	
 	
 }
 
@@ -387,12 +431,24 @@ opacity: 0.7;
 	height: 324px;
 	z-index: 2;
 }
+.secondblleftimgdash:hover{
+	cursor: pointer;
+	transition: all 0.5s ease;
+	transform: scale(1.1);
+}
+
 .secondblleftimggf{
 	position: absolute;
 	left: 200px;
 	top: 80px;
 	z-index: 4;
 }
+.secondblleftimggf:hover{
+	cursor: pointer;
+	transition: all 0.5s ease;
+	transform: scale(1.1);
+}
+
 
 .secondblleftimggg{
 	position: absolute;
@@ -400,6 +456,12 @@ opacity: 0.7;
 	top: -85px;
 	z-index: 3;
 }
+.secondblleftimggg:hover{
+	cursor: pointer;
+	transition: all 0.5s ease;
+	transform: scale(1.1);
+}
+
 
 .secondblleftimgell{
 	position: absolute;
@@ -407,6 +469,12 @@ opacity: 0.7;
 	bottom: 155px;
 	z-index: 1;
 	opacity: 0.8;
+
+}
+.secondblleftimgell:hover{
+	cursor: pointer;
+	transition: all 0.5s ease;
+	transform: scale(1.1);
 }
 
 .secondblright{
@@ -483,6 +551,12 @@ margin-bottom: 1rem;
 .downloadrigt img{
 	width: 765px;
 	height: 443px;
+}
+
+.downloadrigt img:hover{
+	transition: all 0.4s ease;
+	transform: scale(1.08);
+	cursor: pointer;
 }
 
 .downloadbtn{
