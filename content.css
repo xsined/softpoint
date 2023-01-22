@@ -111,8 +111,9 @@ filter: drop-shadow(-5px 5px 45px rgba(2, 18, 6, 0.15));
 }
 
 
-/*rectangle*/
+/*rectangle*/ /*она же залупа с картинками*/
 .rectangle{
+position: relative;
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
@@ -122,6 +123,15 @@ align-content: center;
 margin-top: 5rem;
 width: 100%;
 height: 163px;
+background: #8EE6C9;
+opacity: 0.7;
+z-index: 1;
+
+}
+
+.rectangleimg{ /* не работает */
+	 
+	z-index: 2;
 
 }
 
@@ -129,6 +139,7 @@ height: 163px;
 .moultiple{
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	gap: 3rem;
@@ -149,12 +160,28 @@ height: 163px;
 }
 
 .blockus{
+	position: relative;
 	max-width: 282px;
 	max-height: 290px;
 	background: #FFFFFF;
 	box-shadow: 0px 15px 65px rgba(65, 77, 68, 0.15);
 	border-radius: 10px;
 
+}
+
+
+
+.recufss{
+	position: absolute;
+	z-index: 2;
+	right: 199px;
+	top: 42px;
+
+}
+
+.blockus:hover .recufss{
+	transform: scale3d(1.08, 1.0, 1.0);
+	transition: all 0.9s ease;
 }
 
 .blockus:hover{
@@ -257,6 +284,7 @@ transition: all 0.5s ease;
 display: flex;
 flex-direction: row;
 align-items: center;
+flex-wrap: wrap;
 justify-content: center;
 gap: 2rem;
 margin-bottom: 4rem;
@@ -297,19 +325,20 @@ opacity: 0.7;
 /*karta*/
 .singleright{
 	position: relative;
-	margin-bottom: 2rem;	
+	margin-bottom: 2rem;
+
 }
 
 .im_ellipse{
 	position: absolute;
 	top: -60px;
 	left: -60px;
-	z-index: 0;
 	opacity: 0.8;
-	
+
 }
 
 .im_light{
+	position: relative;
 	z-index: 1;
 }
 
@@ -317,6 +346,8 @@ opacity: 0.7;
 	position: absolute;
 	top: 90px;
 	left: 180px;
+	z-index: 2;
+	
 
 }
 
@@ -324,6 +355,294 @@ opacity: 0.7;
 	position: absolute;
 	top: 170px;
 	left: -110px;
+	z-index: 2;
+	
+}
 
+.singul ul{
+	margin-left: 1.4rem;
+	list-style-type: none;
+	list-style-image: url(img/gp9.png);
+}
+
+
+.newsecond{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 5rem;
+	margin-top: 8rem;
+}
+
+.secondblleft{
+	position: relative;
+	margin-bottom: 4rem;
+}
+
+.secondblleftimgdash{
+	position: relative;
+	width: 490px;
+	height: 324px;
+	z-index: 2;
+}
+.secondblleftimggf{
+	position: absolute;
+	left: 200px;
+	top: 80px;
+	z-index: 4;
+}
+
+.secondblleftimggg{
+	position: absolute;
+	right: 215px;
+	top: -85px;
+	z-index: 3;
+}
+
+.secondblleftimgell{
+	position: absolute;
+	left: 315px;
+	bottom: 155px;
+	z-index: 1;
+	opacity: 0.8;
+}
+
+.secondblright{
+	width: 499px;
+height: 345px;
+}
+
+
+.secondblright h1{
+font-style: normal;
+font-weight: 600;
+font-size: 45px;
+line-height: 68px;
+color: #021206;
+}
+
+
+.secondblright p{
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 160%;
+color: #021206;
+opacity: 0.7;
+margin-bottom: 1rem;
+}
+
+.secondblright span{
+		font-weight: 600;
+	font-size: 18px;
+	line-height: 160%;
+	color: #021206;
+}
+
+
+.download{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+	position: relative;
+
+
+}
+
+.downloadleft{
+	width: 480px;
+	height: 345px;
+	margin-left: 3rem;
+}
+
+.downloadleft h1{
+	font-style: normal;
+	font-weight: 600;
+	font-size: 45px;
+	line-height: 68px;
+	color: #021206;
+	margin-bottom: 2rem;
+}
+
+.downloadleft p{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 160%;
+	color: #021206;
+	opacity: 0.7;
+	margin-bottom: 2rem;
+}
+
+.downloadrigt img{
+	width: 765px;
+	height: 443px;
+}
+
+.downloadbtn{
+	width: 216px;
+	height: 62px;
+	color: white;
+	background: #F44545;
+	border-radius: 6px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.downloadbtn:hover{
+	transition: all 0.4s ease;
+	transform: translateY(-2px);
+
+}
+
+
+
+
+/*последнее прайс*/
+
+.bestprice {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 2rem;
+
+}
+.bestpricetop {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+
+}
+.bestpricetop h1{
+	font-style: normal;
+	font-weight: 600;
+	font-size: 45px;
+	line-height: 68px;
+	color: #021206;
+}
+
+.bestpricetop p{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 170%;
+	text-align: center;
+	color: #021206;
+	opacity: 0.7;
+	width: 754px;
+	height: 57.58px;
+}
+
+.bestpricebot {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+}
+.bestpricebot_basic {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 170%;
+	text-align: center;
+	color: #021206;
+	opacity: 0.7;
+	width: 361px;
+	height: 604px;
+	background: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 15px;
+	padding: 40px;
+	
+}
+.bestpricebot_basic h3{
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 170%;
+	text-align: center;
+	color: #021206;
+	opacity: 0.5;
+	
+}
+.bestpricebot_basic h2{
+	font-weight: 600;
+	font-size: 43px;
+	line-height: 100%;
+	text-align: center;
+	color: #021206;
+}
+.bestprice li{
+	list-style-type: none;
+	list-style-image: url(img/gp9.png);
+}
+
+
+.bestpricebot_list{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: baseline;
+	align-content: center;
+	position: relative;
+
+}
+
+.bestpricebot_list ul li span{
+ 	border: 1 solid black;
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: space-between;
+}
+
+.bestpricebot_basic:hover{
+	background: #F7F7ED;
+	transition: all 0.5s ease;
+	transform: translateY(-10px);
+	cursor: pointer;
+}
+.bestpricebot_basic:hover .bestpricebot_basic_btn {
+width: 239px;
+height: 60px;
+background: #F55454;
+border-radius: 6px;
+color: white;
+}
+
+.bestpricebot_basic_btn{
+width: 239px;
+height: 60px;
+background: white;
+border-radius: 6px;
+color: #F55454;
+border: 1px solid #F55454;
+}
+
+.listunded{
+	text-decoration: line-through;
+	color: gray;
+}
+
+.no{
+	color: gray;
 }
 
